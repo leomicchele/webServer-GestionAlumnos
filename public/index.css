@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {  
+  /* background: rgb(90 90 90); */
+  background-color: #fff;  
+  min-height: 100vh;
+  background-color: #32a3e0;
+  background-image: linear-gradient(138deg, #32a3e0 0%, #b3cdcc 100%);
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header {
+  height: auto;
+}
+
+.formulario-login {
+  max-width: 500px;
+  background-color: #fff;
+}
+
+button {
+  background: #000;
+}
+
+.logoHeroOAA {
+  width: 25vw;
+  margin: 0 auto;
+}
+
+/* -------------------------- HOME -------------------------- */
+.contenedor-icono {
+  max-width: 200px;
+}
+
+.icono-home:hover {
+  box-shadow: 0px 0px 7px 4px rgba(0,0,0,0.25);
+  cursor: pointer;
+}
+
+
+/* Modal */
+.modal_item-pago {
+  width: fit-content;
+}
+
+.modal_item-info {
+  width: 100%;
+}
+
+.alerta-correcta {
+  cursor: text;
+  /* animation: entrando 1s ease 0s 1 normal forwards; */
+  animation-name: entrando, saliendo;
+  animation-duration: 1s, 1s;
+  /* animation-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000), cubic-bezier(0.390, 0.575, 0.565, 1.000); */
+  animation-timing-function: ease, ease-out;
+  animation-direction: normal, normal;
+  animation-delay:0s, 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes entrando {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes saliendo {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+/* -------------------------- Animaciones -------------------------- */
+
+
+@media (min-width: 768px) {
+  .container-registro {
+    width: 95%;
+  }
+}
